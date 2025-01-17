@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Pedido</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    audio {
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>O Grande Momento 🌟</h1>
+    <p>Parabéns, Samantha! Você chegou até aqui.<br>Agora, vem a pergunta mais importante de todas...</p>
+    <h2 style="margin: 20px 0;">Quer namorar comigo? 💍</h2>
+    <button onclick="resposta(true)">Sim!</button>
+    <button onclick="resposta(false)">Óbvio que sim!</button>
+    <audio controls autoplay>
+      <source src="https://cdn.pixabay.com/download/audio/2021/09/25/audio_91a451242e.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio.
+    </audio>
+  </div>
+  <script>
+    function resposta(ehSim) {
+      if (ehSim) {
+        alert("Você me fez a pessoa mais feliz do mundo! ❤️");
+      } else {
+        alert("Sabia que escolheria isso! 😊");
+      }
+      document.body.innerHTML = "<h1>Obrigado por aceitar fazer parte da minha vida, minha princesaa,! 💖</h1>";
+    }
+  </script>
+</body>
+</html>

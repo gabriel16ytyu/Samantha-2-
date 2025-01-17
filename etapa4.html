@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deixe sua mensagem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Deixe sua mensagem! 💌</h1>
+    <p>Escreva algo que você sempre quis me dizer, mas nunca teve coragem. 💭</p>
+    <textarea id="mensagem" placeholder="Sua mensagem aqui..." rows="5" cols="30"></textarea><br>
+    <button onclick="enviarMensagem()">Continuar</button>
+  </div>
+  <script>
+    function enviarMensagem() {
+      const mensagem = document.getElementById('mensagem').value.trim();
+      if (mensagem) {
+        localStorage.setItem('mensagemSamantha', mensagem); // Salva a mensagem
+        alert("Mensagem enviada! Vamos para o próximo desafio.");
+        window.location.href = 'etapa5.html';
+      } else {
+        alert("Por favor, escreva algo antes de continuar. ❤️");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oi, Samantha!</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Animação de corações flutuando
+    document.addEventListener("DOMContentLoaded", () => {
+      const body = document.body;
+      for (let i = 0; i < 30; i++) {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = Math.random() * 100 + "%";
+        heart.style.animationDelay = Math.random() * 3 + "s";
+        body.appendChild(heart);
+      }
+    });
+  </script>
+  <style>
+    .heart {
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/contain;
+      bottom: -30px;
+      animation: float 8s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { opacity: 0.7; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Oi, minha gata ! 💖</h1>
+    <p>Este site foi feito só para você. Está pronta para um desafio especial?</p>
+    <button onclick="window.location.href='etapa2.html'">Sim, estou pronta!</button>
+  </div>
+</body>
+</html>

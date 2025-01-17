@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escolha Certa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Escolha certa! 😊</h1>
+    <p>Qual é a melhor descrição para você?</p>
+    <button onclick="verificarResposta(1)">A mulher mais incrível do mundo.</button><br>
+    <button onclick="verificarResposta(2)">Uma pessoa legal.</button><br>
+    <button onclick="verificarResposta(3)">Alguém inesquecível.</button>
+  </div>
+  <script>
+    function verificarResposta(opcao) {
+      if (opcao === 1) {
+        window.location.href = 'etapa4.html';
+      } else {
+        alert("Tente novamente! Escolha a descrição mais especial.");
+      }
+    }
+  </script>
+</body>
+</html>

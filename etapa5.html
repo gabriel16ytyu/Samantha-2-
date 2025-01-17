@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Enigma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resolva o Enigma 💡</h1>
+    <p>Dica: Sou algo que brilha nos seus olhos quando você está feliz,<br>
+      Estou em cada sorriso que você me dá,<br>
+      Sou invisível, mas você sente no peito quando estamos juntos.<br>
+      Sou tão leve quanto o ar, mas tão poderoso quanto um furacão.<br><br>
+      Quem sou eu?</p>
+    <input type="text" id="resposta" placeholder="Sua resposta"><br>
+    <button onclick="verificarResposta()">Enviar resposta</button>
+  </div>
+  <script>
+    function verificarResposta() {
+      const resposta = document.getElementById('resposta').value.trim().toLowerCase();
+      if (resposta === "amor") {
+        alert("Exato! É isso que eu quero construir com você!");
+        window.location.href = 'etapa6.html';
+      } else {
+        alert("Hmm... tente novamente! ❤️");
+      }
+    }
+  </script>
+</body>
+</html>
+
